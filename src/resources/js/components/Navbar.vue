@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-    <div class="logo-strip container px-6 py-8 sm:w-3/4 sm:mx-auto flex justify-around sm:justify-between items-baseline">
+    <div class="logo-strip px-6 py-8 sm:w-3/4 sm:mx-auto flex justify-around sm:justify-between items-baseline">
         <div class="flex items-center">
             <div class="-ml-1 mr-1">
                 <img class="h-8 sm:h-10" src="/img/logo.png" alt="DC Dynamic Massage">
