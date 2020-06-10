@@ -48,11 +48,34 @@
             </div>
         </div>
     </div>
+    <div class="menu-strip bg-blue-400">
+        <div class="sm:hidden py-3 flex justify-end px-6">
+                <button @click="isOpen = !isOpen" type="button" class="text-gray-300 hover:text-white focus:text-white focus:outline-none">
+                    <svg class="h-8 w-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24">
+                        <path class="heroicon-ui"
+                            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                        </svg>
+                </button>
+            </div>
+        <div :class="isOpen ? '' : 'hidden'" class="sm:flex sm:items-center-mt-4 px-6 py-4 -my-6 sm:my-0 sm:mt-0 md:text-xl sm:w-1/2 sm:mx-auto sm:justify-around">
+            <a href="/" :class="urlPath == '' ? 'bg-gray-700' : ''" class="block text-white font-semibold rounded px-2 py-1 hover:bg-gray-700">Home</a>
+            <a href="/about" :class="urlPath == '/about' ? 'bg-gray-700' : ''"class="block text-white font-semibold rounded px-2 py-1 mt-1 hover:bg-gray-700 sm:mt-0">About</a>
+            <a href="/services" :class="urlPath == '/services' ? 'bg-gray-700' : '/services'" class="block text-white font-semibold rounded px-2 py-1 mt-1 hover:bg-gray-700 sm:mt-0">Services</a>
+            <a href="/contact" :class="urlPath == '/contact' ? 'bg-gray-700' : '/contact'" class="block text-white font-semibold rounded px-2 py-1 mt-1 hover:bg-gray-700 sm:mt-0">Contact</a>
+        </div>
+    </div>
   </header>
 </template>
 
 <script>
 export default {
+
+    computed: {
+        urlPath() {
+            return window.location.pathname.replace(/\/$/, "");
+        }     
+    },
   data() {
     return {
       isOpen: false,

@@ -19,9 +19,19 @@ hbs.registerPartials(partialsPath)
 app.use(express.static(publicPath))
 
 app.get('', (req, res) => {
-    res.render('index', {
-        title: 'Hello world'
-    })
+    res.render('index')
+})
+
+app.get('/about', (req, res) => {
+    res.render('about')
+})
+
+app.get('/services', (req, res) => {
+    res.render('services')
+})
+
+app.get('/contact', (req, res) => {
+    res.render('contact')
 })
 
 app.get('*', (req, res) => {

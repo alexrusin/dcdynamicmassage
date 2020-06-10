@@ -179,7 +179,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  computed: {
+    urlPath: function urlPath() {
+      return window.location.pathname.replace(/\/$/, "");
+    }
+  },
   data: function data() {
     return {
       isOpen: false
@@ -1471,7 +1493,7 @@ var render = function() {
       "div",
       {
         staticClass:
-          "logo-strip container px-6 py-8 sm:w-3/4 sm:mx-auto flex justify-around sm:justify-between items-baseline"
+          "logo-strip px-6 py-8 sm:w-3/4 sm:mx-auto flex justify-around sm:justify-between items-baseline"
       },
       [
         _vm._m(0),
@@ -1548,7 +1570,102 @@ var render = function() {
           ]
         )
       ]
-    )
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "menu-strip bg-blue-400" }, [
+      _c("div", { staticClass: "sm:hidden py-3 flex justify-end px-6" }, [
+        _c(
+          "button",
+          {
+            staticClass:
+              "text-gray-300 hover:text-white focus:text-white focus:outline-none",
+            attrs: { type: "button" },
+            on: {
+              click: function($event) {
+                _vm.isOpen = !_vm.isOpen
+              }
+            }
+          },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "h-8 w-8 fill-current",
+                attrs: {
+                  xmlns: "http://www.w3.org/2000/svg",
+                  viewBox: "0 0 24 24",
+                  width: "24",
+                  height: "24"
+                }
+              },
+              [
+                _c("path", {
+                  staticClass: "heroicon-ui",
+                  attrs: {
+                    d:
+                      "M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                  }
+                })
+              ]
+            )
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass:
+            "sm:flex sm:items-center-mt-4 px-6 py-4 -my-6 sm:my-0 sm:mt-0 md:text-xl sm:w-1/2 sm:mx-auto sm:justify-around",
+          class: _vm.isOpen ? "" : "hidden"
+        },
+        [
+          _c(
+            "a",
+            {
+              staticClass:
+                "block text-white font-semibold rounded px-2 py-1 hover:bg-gray-700",
+              class: _vm.urlPath == "" ? "bg-gray-700" : "",
+              attrs: { href: "/" }
+            },
+            [_vm._v("Home")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "block text-white font-semibold rounded px-2 py-1 mt-1 hover:bg-gray-700 sm:mt-0",
+              class: _vm.urlPath == "/about" ? "bg-gray-700" : "",
+              attrs: { href: "/about" }
+            },
+            [_vm._v("About")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "block text-white font-semibold rounded px-2 py-1 mt-1 hover:bg-gray-700 sm:mt-0",
+              class: _vm.urlPath == "/services" ? "bg-gray-700" : "/services",
+              attrs: { href: "/services" }
+            },
+            [_vm._v("Services")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "block text-white font-semibold rounded px-2 py-1 mt-1 hover:bg-gray-700 sm:mt-0",
+              class: _vm.urlPath == "/contact" ? "bg-gray-700" : "/contact",
+              attrs: { href: "/contact" }
+            },
+            [_vm._v("Contact")]
+          )
+        ]
+      )
+    ])
   ])
 }
 var staticRenderFns = [
