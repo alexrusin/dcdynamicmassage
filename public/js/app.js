@@ -14168,8 +14168,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Projects\javascript\dcdynamicmassage\src\resources\js\app.js */"./src/resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Projects\javascript\dcdynamicmassage\src\resources\css\main.css */"./src/resources/css/main.css");
+__webpack_require__(/*! C:\Users\Maryna\Documents\GitHub\dcdynamicmassage\src\resources\js\app.js */"./src/resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Maryna\Documents\GitHub\dcdynamicmassage\src\resources\css\main.css */"./src/resources/css/main.css");
 
 
 /***/ })
