@@ -59,7 +59,7 @@
           <img class="h-8 sm:h-10" src="/img/logo.png" alt="DC Dynamic Massage" />
         </div>
         <div>
-          <p class="logo-text font-bold text-2xl sm:text-3xl">DC Dynamic Massage</p>
+          <h1 class="logo-text font-bold text-2xl sm:text-3xl">DC Dynamic Massage</h1>
         </div>
       </div>
       <div class="hidden sm:flex items-center space-x-2 md:space-x-6">
