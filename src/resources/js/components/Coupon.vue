@@ -16,6 +16,11 @@
         <div class="p-6 text-center">
             <p class="uppercase font-bold text-sm md:text-lg">{{data.tagLine}}</p>
         </div>
+        <p class="px-4 text-sm md:text-base" v-if="fullText">{{data.description}}</p>
+        <div v-if="fullText" class="promo-card-footer bg-gray-300 mt-6 py-2">
+            <p class="px-4 py-2 font-semibold text-sm">Use promo code: {{data.promoCode}}</p>
+            <p v-if="data.expiresAt" class="text-red-600 px-4 py-2 font-semibold text-sm">Expires: {{data.expiresAt}}</p>
+        </div>
     </div>
 </template>
 

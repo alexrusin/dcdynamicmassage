@@ -104,7 +104,7 @@
         </div>
       </div>
     </div>
-    <div class="menu-strip bg-blue-400">
+    <div class="menu-strip bg-blue-400 pb-4 md:pb-0">
       <div class="sm:hidden py-3 flex justify-end px-6">
         <button
           @click="isOpen = !isOpen"
