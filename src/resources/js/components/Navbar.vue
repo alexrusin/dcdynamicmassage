@@ -59,7 +59,7 @@
           <img class="h-8 sm:h-10" src="/img/logo.png" alt="DC Dynamic Massage" />
         </div>
         <div>
-          <p class="logo-text font-bold text-2xl sm:text-3xl">DC Dynamic Massage</p>
+          <h1 class="logo-text font-bold text-2xl sm:text-3xl">DC Dynamic Massage</h1>
         </div>
       </div>
       <div class="hidden sm:flex items-center space-x-2 md:space-x-6">
@@ -104,7 +104,7 @@
         </div>
       </div>
     </div>
-    <div class="menu-strip bg-blue-400">
+    <div class="menu-strip bg-blue-400 pb-4 md:pb-0">
       <div class="sm:hidden py-3 flex justify-end px-6">
         <button
           @click="isOpen = !isOpen"
