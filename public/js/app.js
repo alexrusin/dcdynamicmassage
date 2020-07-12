@@ -1703,7 +1703,7 @@ var render = function() {
     "div",
     {
       staticClass:
-        "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 xl:mx-24"
+        "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 xl:mx-6"
     },
     _vm._l(_vm.coupons, function(coupon) {
       return _c("coupon", { key: coupon.id, attrs: { data: coupon } })

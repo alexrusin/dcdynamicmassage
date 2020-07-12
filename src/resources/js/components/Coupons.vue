@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 xl:mx-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 xl:mx-6">
         <coupon v-for="coupon in coupons" :data="coupon" :key="coupon.id"></coupon>
     </div>    
 </template>
