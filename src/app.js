@@ -34,6 +34,10 @@ app.get('/contact', (req, res) => {
     res.render('contact')
 })
 
+app.get('/contact-form-submitted', (req, res) => {
+    res.render('contact-form-submitted')
+})
+
 app.get('*', (req, res) => {
     res.render('404', {
         errorMessage: 'Page not found'
