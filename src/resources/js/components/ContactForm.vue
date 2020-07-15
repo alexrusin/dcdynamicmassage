@@ -8,7 +8,7 @@
             for="grid-first-name"
           >First Name (Required)</label>
           <input
-            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="grid-first-name"
             type="text"
             placeholder="Jane"
@@ -28,7 +28,7 @@
             id="grid-last-name"
             type="text"
             placeholder="Doe"
-            v-mode="form.last_name"
+            v-model="form.last_name"
             name="last_name"
           />
         </div>
@@ -82,10 +82,11 @@
 
           <textarea
             class="no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+            :class="form.errors.has('message') ? 'border border-red-500' : ''"
             id="message"
             required
             name="message"
-            v-model="form.message"
+            v-model="form.message"  
           ></textarea>
            <p class="text-red-500 text-xs italic" v-if="form.errors.has('message')" v-text="form.errors.get('message')"></p>
         </div>
@@ -124,9 +125,9 @@ export default {
 
     methods: {
         onSubmit() {
-            this.form.post('/api/send-form')
+            this.form.post('/api/contact-form')
                 .then((response) => {
-                    window.location.href('/contact-form-submitted')
+                    // window.location.replace('/contact-form-submitted')
                 })
                 .catch((error) => {
                     console.log(error);
