@@ -16,7 +16,7 @@
             v-model="form.first_name"
             name="first_name"
           />
-          <p class="text-red-500 text-xs italic" v-if="form.errors.has('name')" v-text="form.errors.get('name')"></p>
+          <p class="text-red-500 text-xs italic" v-if="form.errors.has('first_name')" v-text="form.errors.get('first_name')"></p>
         </div>
         <div class="w-full md:w-1/2 px-3">
           <label
