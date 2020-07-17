@@ -17,6 +17,10 @@ hbs.registerPartials(partialsPath)
 
 // Setup static directory to serve
 app.use(express.static(publicPath))
+app.use(express.json());
+
+const apiRouter = require('./routers/api')
+app.use(apiRouter);
 
 app.get('', (req, res) => {
     res.render('index')
@@ -32,6 +36,10 @@ app.get('/services', (req, res) => {
 
 app.get('/contact', (req, res) => {
     res.render('contact')
+})
+
+app.get('/contact-form-submitted', (req, res) => {
+    res.render('contact-form-submitted')
 })
 
 app.get('*', (req, res) => {

@@ -16,18 +16,28 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "autoprefixer": "^9.8.5",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "postcss-cli": "^7.1.1",
     "tailwind": "^4.0.0"
+=======
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemailer": "^6.4.10",
+    "validator": "^13.1.1"
+>>>>>>> ab8d4056a4e8f9cd133d81af75cf4a177c958985
   },
   "devDependencies": {
     "cross-env": "^7.0",
+    "env-cmd": "^10.1.0",
     "laravel-mix": "^5.0.1",
     "nodemon": "^2.0.2",
     "tailwindcss": "^1.5.1",
     "vue": "^2.6.11",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vue-the-mask": "^0.11.1"
   }
 }
