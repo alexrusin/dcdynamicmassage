@@ -2383,6 +2383,109 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/resources/js/components/YelpReview.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/resources/js/components/YelpReview.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    data: {
+      type: Object,
+      required: true
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/resources/js/components/YelpReviews.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./src/resources/js/components/YelpReviews.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _YelpReview__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./YelpReview */ "./src/resources/js/components/YelpReview.vue");
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    YelpReview: _YelpReview__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      reviews: [{
+        id: 1,
+        rating: 5,
+        user: {
+          profile_url: 'https://www.yelp.com/user_details?userid=W8UK02IDdRS2GL_66fuq6w',
+          image_url: 'https://s3-media3.fl.yelpcdn.com/photo/iwoAD12zkONZxJ94ChAaMg/o.jpg',
+          name: "Ella A."
+        },
+        text: 'Went back again to this place since the last time i visited the bay area 5 months ago, and nothing has changed. Still the sketchy Mission, Still the cashier...',
+        time_created: '2016-08-29 00:41:13',
+        url: 'https://www.yelp.com/biz/la-palma-mexicatessen-san-francisco?hrid=hp8hAJ-AnlpqxCCu7kyCWA&adjust_creative=0sidDfoTIHle5vvHEBvF0w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=0sidDfoTIHle5vvHEBvF0w'
+      }, {
+        id: 2,
+        rating: 5,
+        user: {
+          profile_url: 'https://www.yelp.com/user_details?userid=W8UK02IDdRS2GL_66fuq6w',
+          image_url: 'https://s3-media3.fl.yelpcdn.com/photo/iwoAD12zkONZxJ94ChAaMg/o.jpg',
+          name: "Ella Amarella"
+        },
+        text: 'Went back again to this place since the last time i visited the bay area 5 months ago, and nothing has changed. Still the sketchy Mission, Still the cashier...',
+        time_created: '2016-08-29 00:41:13',
+        url: 'https://www.yelp.com/biz/la-palma-mexicatessen-san-francisco?hrid=hp8hAJ-AnlpqxCCu7kyCWA&adjust_creative=0sidDfoTIHle5vvHEBvF0w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=0sidDfoTIHle5vvHEBvF0w'
+      }, {
+        id: 3,
+        rating: 5,
+        user: {
+          profile_url: 'https://www.yelp.com/user_details?userid=W8UK02IDdRS2GL_66fuq6w',
+          image_url: 'https://s3-media3.fl.yelpcdn.com/photo/iwoAD12zkONZxJ94ChAaMg/o.jpg',
+          name: "A Guy with a Freaking Long Name"
+        },
+        text: 'Went back again to this place since the last time i visited the bay area 5 months ago, and nothing has changed. Still the sketchy Mission, Still the cashier...',
+        time_created: '2016-08-29 00:41:13',
+        url: 'https://www.yelp.com/biz/la-palma-mexicatessen-san-francisco?hrid=hp8hAJ-AnlpqxCCu7kyCWA&adjust_creative=0sidDfoTIHle5vvHEBvF0w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=0sidDfoTIHle5vvHEBvF0w'
+      }]
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./src/resources/js/components/Coupon.vue?vue&type=style&index=0&id=d8973748&scoped=true&lang=css&":
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./src/resources/js/components/Coupon.vue?vue&type=style&index=0&id=d8973748&scoped=true&lang=css& ***!
@@ -4455,6 +4558,111 @@ var staticRenderFns = [
     ])
   }
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/resources/js/components/YelpReview.vue?vue&type=template&id=7d55cd3e&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/resources/js/components/YelpReview.vue?vue&type=template&id=7d55cd3e& ***!
+  \*****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass:
+        "reviews-card bg-white border-2 border-red-600 rounded-lg shadow-lg mt-8"
+    },
+    [
+      _c("div", { staticClass: "px-4" }, [
+        _c("img", {
+          staticClass: "w-5/6 object-center mb-4 static",
+          attrs: { src: "/img/yelp-logo.jpg", alt: "Yelp" }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "w-12 h-12 inline-block" }, [
+          _c("img", {
+            staticClass: "w-full h-full pl-1 rounded-full",
+            attrs: {
+              src: _vm.data.user.image_url,
+              alt: _vm.data.user.profile_url
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "w-2/3 inline-block align-top" }, [
+          _c(
+            "p",
+            { staticClass: "pl-2 inline-block font-bold break-normal text-sm" },
+            [_vm._v(_vm._s(_vm.data.user.name))]
+          ),
+          _vm._v(" "),
+          _c("p", { staticClass: "pl-2 text-xs" }, [
+            _vm._v(_vm._s(_vm.data.time_created))
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "px-4 pb-4" }, [
+        _c("img", {
+          staticClass: "w-1/2",
+          attrs: { src: "/img/stars_placeholder.jpg" }
+        }),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-justify text-xs" }, [
+          _vm._v(_vm._s(_vm.data.text))
+        ])
+      ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/resources/js/components/YelpReviews.vue?vue&type=template&id=310f7ba5&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/resources/js/components/YelpReviews.vue?vue&type=template&id=310f7ba5& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass:
+        "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 xl:mx-24"
+    },
+    _vm._l(_vm.reviews, function(review) {
+      return _c("yelp-review", { key: review.id, attrs: { data: review } })
+    }),
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -16624,7 +16832,11 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 Vue.component('navbar', __webpack_require__(/*! ./components/Navbar.vue */ "./src/resources/js/components/Navbar.vue")["default"]);
 Vue.component('coupons', __webpack_require__(/*! ./components/Coupons.vue */ "./src/resources/js/components/Coupons.vue")["default"]);
 Vue.component('current-year', __webpack_require__(/*! ./components/CurrentYear.vue */ "./src/resources/js/components/CurrentYear.vue")["default"]);
+<<<<<<< HEAD
+Vue.component('yelp-reviews', __webpack_require__(/*! ./components/YelpReviews.vue */ "./src/resources/js/components/YelpReviews.vue")["default"]);
+=======
 Vue.component('contact-form', __webpack_require__(/*! ./components/ContactForm.vue */ "./src/resources/js/components/ContactForm.vue")["default"]);
+>>>>>>> ab8d4056a4e8f9cd133d81af75cf4a177c958985
 var app = new Vue({
   el: '#app'
 });
@@ -17081,15 +17293,79 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ "./src/resources/js/components/YelpReview.vue":
+/*!****************************************************!*\
+  !*** ./src/resources/js/components/YelpReview.vue ***!
+  \****************************************************/
+=======
 /***/ "./src/resources/js/utils/Errors.js":
 /*!******************************************!*\
   !*** ./src/resources/js/utils/Errors.js ***!
   \******************************************/
+>>>>>>> ab8d4056a4e8f9cd133d81af75cf4a177c958985
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
+/* harmony import */ var _YelpReview_vue_vue_type_template_id_7d55cd3e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./YelpReview.vue?vue&type=template&id=7d55cd3e& */ "./src/resources/js/components/YelpReview.vue?vue&type=template&id=7d55cd3e&");
+/* harmony import */ var _YelpReview_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./YelpReview.vue?vue&type=script&lang=js& */ "./src/resources/js/components/YelpReview.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _YelpReview_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _YelpReview_vue_vue_type_template_id_7d55cd3e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _YelpReview_vue_vue_type_template_id_7d55cd3e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/resources/js/components/YelpReview.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/resources/js/components/YelpReview.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./src/resources/js/components/YelpReview.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_YelpReview_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./YelpReview.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/resources/js/components/YelpReview.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_YelpReview_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/resources/js/components/YelpReview.vue?vue&type=template&id=7d55cd3e&":
+/*!***********************************************************************************!*\
+  !*** ./src/resources/js/components/YelpReview.vue?vue&type=template&id=7d55cd3e& ***!
+  \***********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_YelpReview_vue_vue_type_template_id_7d55cd3e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./YelpReview.vue?vue&type=template&id=7d55cd3e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/resources/js/components/YelpReview.vue?vue&type=template&id=7d55cd3e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_YelpReview_vue_vue_type_template_id_7d55cd3e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_YelpReview_vue_vue_type_template_id_7d55cd3e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+=======
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Errors; });
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -17171,20 +17447,85 @@ var Errors = /*#__PURE__*/function () {
 
   return Errors;
 }();
+>>>>>>> ab8d4056a4e8f9cd133d81af75cf4a177c958985
 
 
 
 /***/ }),
 
+<<<<<<< HEAD
+/***/ "./src/resources/js/components/YelpReviews.vue":
+/*!*****************************************************!*\
+  !*** ./src/resources/js/components/YelpReviews.vue ***!
+  \*****************************************************/
+=======
 /***/ "./src/resources/js/utils/Form.js":
 /*!****************************************!*\
   !*** ./src/resources/js/utils/Form.js ***!
   \****************************************/
+>>>>>>> ab8d4056a4e8f9cd133d81af75cf4a177c958985
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+<<<<<<< HEAD
+/* harmony import */ var _YelpReviews_vue_vue_type_template_id_310f7ba5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./YelpReviews.vue?vue&type=template&id=310f7ba5& */ "./src/resources/js/components/YelpReviews.vue?vue&type=template&id=310f7ba5&");
+/* harmony import */ var _YelpReviews_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./YelpReviews.vue?vue&type=script&lang=js& */ "./src/resources/js/components/YelpReviews.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _YelpReviews_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _YelpReviews_vue_vue_type_template_id_310f7ba5___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _YelpReviews_vue_vue_type_template_id_310f7ba5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/resources/js/components/YelpReviews.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/resources/js/components/YelpReviews.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./src/resources/js/components/YelpReviews.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_YelpReviews_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./YelpReviews.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/resources/js/components/YelpReviews.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_YelpReviews_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/resources/js/components/YelpReviews.vue?vue&type=template&id=310f7ba5&":
+/*!************************************************************************************!*\
+  !*** ./src/resources/js/components/YelpReviews.vue?vue&type=template&id=310f7ba5& ***!
+  \************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_YelpReviews_vue_vue_type_template_id_310f7ba5___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./YelpReviews.vue?vue&type=template&id=310f7ba5& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/resources/js/components/YelpReviews.vue?vue&type=template&id=310f7ba5&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_YelpReviews_vue_vue_type_template_id_310f7ba5___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_YelpReviews_vue_vue_type_template_id_310f7ba5___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+=======
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Form; });
 /* harmony import */ var _Errors__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Errors */ "./src/resources/js/utils/Errors.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
@@ -17338,6 +17679,7 @@ var Form = /*#__PURE__*/function () {
 
   return Form;
 }();
+>>>>>>> ab8d4056a4e8f9cd133d81af75cf4a177c958985
 
 
 
@@ -17350,8 +17692,8 @@ var Form = /*#__PURE__*/function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\OtherProjects\javascript\dcdynamicmassage\src\resources\js\app.js */"./src/resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\OtherProjects\javascript\dcdynamicmassage\src\resources\css\main.css */"./src/resources/css/main.css");
+__webpack_require__(/*! C:\Users\Maryna\Documents\GitHub\dcdynamicmassage\src\resources\js\app.js */"./src/resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Maryna\Documents\GitHub\dcdynamicmassage\src\resources\css\main.css */"./src/resources/css/main.css");
 
 
 /***/ })
