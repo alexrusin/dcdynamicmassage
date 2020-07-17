@@ -3597,11 +3597,13 @@ var render = function() {
                 }
               ],
               staticClass:
-                "appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white",
+                "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white",
+              class: _vm.form.errors.has("first_name")
+                ? "border border-red-500"
+                : "",
               attrs: {
                 id: "grid-first-name",
                 type: "text",
-                placeholder: "Jane",
                 required: "",
                 name: "first_name"
               },
@@ -3616,10 +3618,12 @@ var render = function() {
               }
             }),
             _vm._v(" "),
-            _vm.form.errors.has("name")
+            _vm.form.errors.has("first_name")
               ? _c("p", {
                   staticClass: "text-red-500 text-xs italic",
-                  domProps: { textContent: _vm._s(_vm.form.errors.get("name")) }
+                  domProps: {
+                    textContent: _vm._s(_vm.form.errors.get("first_name"))
+                  }
                 })
               : _vm._e()
           ]),
@@ -3646,12 +3650,7 @@ var render = function() {
               ],
               staticClass:
                 "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
-              attrs: {
-                id: "grid-last-name",
-                type: "text",
-                placeholder: "Doe",
-                name: "last_name"
-              },
+              attrs: { id: "grid-last-name", type: "text", name: "last_name" },
               domProps: { value: _vm.form.last_name },
               on: {
                 input: function($event) {
@@ -3688,6 +3687,9 @@ var render = function() {
               ],
               staticClass:
                 "appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500",
+              class: _vm.form.errors.has("email")
+                ? "border border-red-500"
+                : "",
               attrs: {
                 id: "grid-email",
                 type: "email",

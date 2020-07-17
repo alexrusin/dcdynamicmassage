@@ -8,10 +8,10 @@
             for="grid-first-name"
           >First Name (Required)</label>
           <input
-            class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+            :class="form.errors.has('first_name') ? 'border border-red-500' : ''"
             id="grid-first-name"
             type="text"
-            placeholder="Jane"
             required
             v-model="form.first_name"
             name="first_name"
@@ -27,7 +27,6 @@
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             id="grid-last-name"
             type="text"
-            placeholder="Doe"
             v-model="form.last_name"
             name="last_name"
           />
@@ -41,6 +40,7 @@
           >E-mail (Required)</label>
           <input
             class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+            :class="form.errors.has('email') ? 'border border-red-500' : ''"
             id="grid-email"
             type="email"
             required
