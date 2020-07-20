@@ -11,7 +11,7 @@
             </div>
             <div class="w-2/3 inline-block align-top">
                 <p class="pl-2 pr-2 inline-block font-bold break-normal text-sm">{{data.user.name}}</p>
-                <p class="pl-2 pr-2 text-xs">{{ data.time_created | dateFormat ('YYYY.MM.DD')}}</p>
+                <p class="pl-2 pr-2 text-xs">{{ data.time_created | humanReadableDate }}</p>
             </div>
         </div>
 
@@ -33,12 +33,18 @@
 </template>
 
 <script>
+import moment from 'moment';
 export default {
     props: {
         data: {
             type: Object,
             required: true
         },
+    },
+    filters: {
+        humanReadableDate (date){
+            return moment(date).format("MMMM d, YYYY");
+        }
     }
     
 }
