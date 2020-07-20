@@ -2412,6 +2412,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     data: {
@@ -2459,7 +2473,7 @@ __webpack_require__.r(__webpack_exports__);
         url: 'https://www.yelp.com/biz/la-palma-mexicatessen-san-francisco?hrid=hp8hAJ-AnlpqxCCu7kyCWA&adjust_creative=0sidDfoTIHle5vvHEBvF0w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=0sidDfoTIHle5vvHEBvF0w'
       }, {
         id: 2,
-        rating: 5,
+        rating: 4,
         user: {
           profile_url: 'https://www.yelp.com/user_details?userid=W8UK02IDdRS2GL_66fuq6w',
           image_url: 'https://s3-media3.fl.yelpcdn.com/photo/iwoAD12zkONZxJ94ChAaMg/o.jpg',
@@ -2470,7 +2484,7 @@ __webpack_require__.r(__webpack_exports__);
         url: 'https://www.yelp.com/biz/la-palma-mexicatessen-san-francisco?hrid=hp8hAJ-AnlpqxCCu7kyCWA&adjust_creative=0sidDfoTIHle5vvHEBvF0w&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_reviews&utm_source=0sidDfoTIHle5vvHEBvF0w'
       }, {
         id: 3,
-        rating: 5,
+        rating: 2.5,
         user: {
           profile_url: 'https://www.yelp.com/user_details?userid=W8UK02IDdRS2GL_66fuq6w',
           image_url: 'https://s3-media3.fl.yelpcdn.com/photo/iwoAD12zkONZxJ94ChAaMg/o.jpg',
@@ -4586,12 +4600,9 @@ var render = function() {
         "reviews-card bg-white border-2 border-red-600 rounded-lg shadow-lg mt-8"
     },
     [
-      _c("div", { staticClass: "px-4" }, [
-        _c("img", {
-          staticClass: "w-5/6 object-center mb-4 static",
-          attrs: { src: "/img/yelp-logo.jpg", alt: "Yelp" }
-        }),
-        _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "pt-4 pl-4 pb-4" }, [
         _c("div", { staticClass: "w-12 h-12 inline-block" }, [
           _c("img", {
             staticClass: "w-full h-full pl-1 rounded-full",
@@ -4605,30 +4616,67 @@ var render = function() {
         _c("div", { staticClass: "w-2/3 inline-block align-top" }, [
           _c(
             "p",
-            { staticClass: "pl-2 inline-block font-bold break-normal text-sm" },
+            {
+              staticClass:
+                "pl-2 pr-2 inline-block font-bold break-normal text-sm"
+            },
             [_vm._v(_vm._s(_vm.data.user.name))]
           ),
           _vm._v(" "),
-          _c("p", { staticClass: "pl-2 text-xs" }, [
-            _vm._v(_vm._s(_vm.data.time_created))
+          _c("p", { staticClass: "pl-2 pr-2 text-xs" }, [
+            _vm._v(
+              _vm._s(_vm._f("dateFormat ")(_vm.data.time_created, "YYYY.MM.DD"))
+            )
           ])
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "px-4 pb-4" }, [
-        _c("img", {
-          staticClass: "w-1/2",
-          attrs: { src: "/img/stars_placeholder.jpg" }
+      _c(
+        "div",
+        { staticClass: "px-4 pb-4 flex" },
+        _vm._l(5, function(i) {
+          return _c(
+            "svg",
+            {
+              key: i,
+              staticClass: "h-4 w-4 fill-current",
+              class: i <= _vm.data.rating ? "text-red-600" : "text-gray-400",
+              attrs: { viewBox: "0 0 511 511" }
+            },
+            [
+              _c("path", {
+                attrs: {
+                  d:
+                    "M511.267,197.258c-1.764-5.431-6.457-9.389-12.107-10.209l-158.723-23.065L269.452,20.157\n\t\t\tc-2.526-5.12-7.741-8.361-13.45-8.361c-5.71,0-10.924,3.241-13.451,8.361l-70.988,143.827l-158.72,23.065\n\t\t\tc-5.649,0.82-10.344,4.778-12.108,10.208c-1.765,5.431-0.293,11.392,3.796,15.377l114.848,111.954L92.271,482.671\n\t\t\tc-0.966,5.628,1.348,11.314,5.967,14.671c2.613,1.898,5.708,2.864,8.818,2.864c2.388,0,4.784-0.569,6.978-1.723l141.967-74.638\n\t\t\tl141.961,74.637c5.055,2.657,11.178,2.215,15.797-1.141c4.619-3.356,6.934-9.044,5.969-14.672l-27.117-158.081l114.861-111.955\n\t\t\tC511.56,208.649,513.033,202.688,511.267,197.258z"
+                }
+              })
+            ]
+          )
         }),
-        _vm._v(" "),
-        _c("p", { staticClass: "text-justify text-xs" }, [
-          _vm._v(_vm._s(_vm.data.text))
-        ])
+        0
+      ),
+      _vm._v(" "),
+      _c("p", { staticClass: "px-4 pb-4 text-justify text-sm" }, [
+        _vm._v(_vm._s(_vm.data.text))
       ])
     ]
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "pt-4 flex justify-around" }, [
+      _c("div", { staticClass: "flex items-center" }, [
+        _c("img", {
+          staticClass: "h-8",
+          attrs: { src: "/img/yelp-logo.jpg", alt: "Yelp" }
+        })
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -4652,10 +4700,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {
-      staticClass:
-        "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 xl:mx-24"
-    },
+    { staticClass: "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16" },
     _vm._l(_vm.reviews, function(review) {
       return _c("yelp-review", { key: review.id, attrs: { data: review } })
     }),
@@ -17697,8 +17742,8 @@ var Form = /*#__PURE__*/function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\OtherProjects\javascript\dcdynamicmassage\src\resources\js\app.js */"./src/resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\OtherProjects\javascript\dcdynamicmassage\src\resources\css\main.css */"./src/resources/css/main.css");
+__webpack_require__(/*! C:\Users\Maryna\Documents\GitHub\dcdynamicmassage\src\resources\js\app.js */"./src/resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Maryna\Documents\GitHub\dcdynamicmassage\src\resources\css\main.css */"./src/resources/css/main.css");
 
 
 /***/ })

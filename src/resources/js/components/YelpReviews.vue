@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 xl:mx-24">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16">
         <yelp-review v-for="review in reviews" :data="review" :key="review.id"></yelp-review>
     </div>    
 </template>
@@ -28,7 +28,7 @@ export default {
                 },
                 {
                     id: 2,
-                    rating: 5,
+                    rating: 4,
                     user: {
                         profile_url: 'https://www.yelp.com/user_details?userid=W8UK02IDdRS2GL_66fuq6w',
                         image_url: 'https://s3-media3.fl.yelpcdn.com/photo/iwoAD12zkONZxJ94ChAaMg/o.jpg',
@@ -40,7 +40,7 @@ export default {
                 },
                 {
                     id: 3,
-                    rating: 5,
+                    rating: 2.5,
                     user: {
                         profile_url: 'https://www.yelp.com/user_details?userid=W8UK02IDdRS2GL_66fuq6w',
                         image_url: 'https://s3-media3.fl.yelpcdn.com/photo/iwoAD12zkONZxJ94ChAaMg/o.jpg',
