@@ -2108,6 +2108,8 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Coupon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Coupon */ "./src/resources/js/components/Coupon.vue");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 //
 //
 //
@@ -2115,34 +2117,24 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Coupon: _Coupon__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
+  created: function created() {
+    var _this = this;
+
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.get('/api/coupons').then(function (_ref) {
+      var data = _ref.data;
+      _this.coupons = data.coupons;
+    })["catch"](function (error) {
+      console.log(error);
+    });
+  },
   data: function data() {
     return {
-      coupons: [{
-        id: 1,
-        imageUrl: '/img/sports_massage_coupon.png',
-        tagLine: '$45 first visit sports massage',
-        description: 'Receive $45 off you first sports massage visit.  Coupon must be presented at the time of purchase. Call 818-257-9496 to schedule an appointment.',
-        promoCode: 'SPTMSG01',
-        expiresAt: ''
-      }, {
-        id: 2,
-        imageUrl: '/img/massage_sauna_coupon.jpeg',
-        tagLine: 'Infrared Sauna plus Massage Session for ONLY $60',
-        description: '20 min. Infrared Sauna Session + 40 min. Massage Session for ONLY $60. Coupon must be presented at the time of purchase. Call 818-257-9496 to schedule an appointment. Available at TLC Location only.',
-        promoCode: 'SNMSG02',
-        expiresAt: ''
-      }, {
-        id: 3,
-        imageUrl: '/img/infrared_sauna_coupon.jpg',
-        tagLine: 'Infrared Sauna Packages starting at $20',
-        description: 'Coupon must be presented at the time of purchase. Call 818-257-9496 to schedule an appointment. Available at TLC Location only.',
-        promoCode: 'SPTMSG01',
-        expiresAt: ''
-      }]
+      coupons: []
     };
   }
 });
@@ -25303,7 +25295,7 @@ var render = function() {
         "grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16 xl:mx-6"
     },
     _vm._l(_vm.coupons, function(coupon) {
-      return _c("coupon", { key: coupon.id, attrs: { data: coupon } })
+      return _c("coupon", { key: coupon._id, attrs: { data: coupon } })
     }),
     1
   )
