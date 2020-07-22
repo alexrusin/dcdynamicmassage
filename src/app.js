@@ -10,6 +10,9 @@ const viewsPath = path.join(__dirname, 'templates/views')
 const partialsPath = path.join(__dirname, 'templates/partials')
 const layoutsPath = path.join(__dirname, 'templates/layouts')
 
+let port = process.env.PORT;
+
+
 // Setup handlebars engine and views location
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
@@ -48,6 +51,10 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3030, () => {
-    console.log('Server is up on port 3030')
+if (!port) {
+    port = 3030;
+}
+
+app.listen(port, () => {
+    console.log(`Server is running on ${port}`)
 })
