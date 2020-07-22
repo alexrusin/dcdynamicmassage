@@ -2038,9 +2038,9 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     onSubmit: function onSubmit() {
-      this.form.post('/api/contact-form').then(function (response) {// window.location.replace('/contact-form-submitted')
-      })["catch"](function (error) {
-        console.log(error);
+      this.form.post('/api/contact-form').then(function (response) {
+        window.location.replace('/contact-form-submitted');
+      })["catch"](function (error) {//console.log(error);
       });
     }
   }
@@ -38965,8 +38965,8 @@ var Form = /*#__PURE__*/function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Maryna\Documents\GitHub\dcdynamicmassage\src\resources\js\app.js */"./src/resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Maryna\Documents\GitHub\dcdynamicmassage\src\resources\css\main.css */"./src/resources/css/main.css");
+__webpack_require__(/*! C:\OtherProjects\javascript\dcdynamicmassage\src\resources\js\app.js */"./src/resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\OtherProjects\javascript\dcdynamicmassage\src\resources\css\main.css */"./src/resources/css/main.css");
 
 
 /***/ })

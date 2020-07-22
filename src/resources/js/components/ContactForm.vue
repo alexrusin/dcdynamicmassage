@@ -127,10 +127,10 @@ export default {
         onSubmit() {
             this.form.post('/api/contact-form')
                 .then((response) => {
-                    // window.location.replace('/contact-form-submitted')
+                    window.location.replace('/contact-form-submitted')
                 })
                 .catch((error) => {
-                    console.log(error);
+                    //console.log(error);
                 })
         }
     }
