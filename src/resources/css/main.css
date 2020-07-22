@@ -3,3 +3,13 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+@media print {
+    .couponToPrint {
+        background-color: white;
+        width: 65%;
+        margin-top: -3em;
+        margin-right: auto;
+        margin-left: auto;
+    }
+  }
