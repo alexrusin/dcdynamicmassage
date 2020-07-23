@@ -1,5 +1,5 @@
 <template>
-    <div class="promo-card bg-white border-2 border-gray-600 border-dashed shadow-lg mt-8">
+    <a class="block promo-card bg-white border-2 border-gray-600 border-dashed shadow-lg mt-8">
         <div class="p-4 flex justify-around">
             <div class="flex items-center">
                 <div class="-ml-1 mr-1">
@@ -21,7 +21,7 @@
             <p class="px-4 py-2 font-semibold text-sm">Use promo code: {{data.promoCode}}</p>
             <p v-if="data.expiresAt" class="text-red-600 px-4 py-2 font-semibold text-sm">Expires: {{data.expiresAt}}</p>
         </div>
-    </div>
+    </a>
 </template>
 
 <script>

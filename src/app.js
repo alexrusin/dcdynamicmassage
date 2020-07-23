@@ -1,6 +1,7 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
+const Datastore = require('nedb')
 
 const app = express()
 
@@ -43,6 +44,23 @@ app.get('/contact', (req, res) => {
 
 app.get('/contact-form-submitted', (req, res) => {
     res.render('contact-form-submitted')
+})
+
+app.get('/coupons/:couponId', (req, res) => {
+     const coupons = new Datastore({ filename: './database/coupons.db', autoload: true });
+
+        coupons.find({_id: req.params.couponId}, (err, docs) => {
+
+            if (err) {
+                return res.render('coupon-page', {
+                    coupon: null
+                })
+            }
+
+            res.render('coupon-page', {
+                coupon: JSON.stringify(docs[0])
+            })
+        })
 })
 
 app.get('*', (req, res) => {
