@@ -1,24 +1,24 @@
 <template>
-    <div class="reviews-card bg-white border-2 border-red-600 rounded-lg shadow-lg mt-8">
-        <div class="pt-4 flex justify-around">
+    <div class="mt-8 bg-white border-4 border-red-600 rounded-lg shadow-lg reviews-card">
+        <div class="flex justify-around pt-4">
             <div class="flex items-center">
-                <img class="h-8" src="/img/yelp-logo.jpg" alt="Yelp" />
+                <img class="w-20" src="/img/yelp-logo.jpg" alt="Yelp" />
              </div>
         </div>  
-        <div class="pt-4 pl-4 pb-4">
-            <div class="w-12 h-12 inline-block">         
-                <img class="w-full h-full pl-1 rounded-full" :src="data.user.image_url" :alt="data.user.profile_url"> 
+        <div class="pt-4 pb-4 pl-4">
+            <div class="inline-block w-12 h-12">         
+                <img class="w-full h-full rounded-full" :src="data.user.image_url" :alt="data.user.profile_url"> 
             </div>
-            <div class="w-2/3 inline-block align-top">
-                <p class="pl-2 pr-2 inline-block font-bold break-normal text-sm">{{data.user.name}}</p>
+            <div class="inline-block w-2/3 align-top">
+                <p class="inline-block pl-2 pr-2 text-sm font-bold break-normal">{{data.user.name}}</p>
                 <p class="pl-2 pr-2 text-xs">{{ data.time_created | humanReadableDate }}</p>
             </div>
         </div>
 
-        <div class="px-4 pb-4 flex">
+        <div class="flex px-4 pb-4">
             <svg v-for="i in 5" 
             :key="i" :class="i <= data.rating ? 'text-red-600' : 'text-gray-400'"  
-            class="h-4 w-4 fill-current" viewBox="0 0 511 511">
+            class="w-4 h-4 fill-current" viewBox="0 0 511 511">
             <path d="M511.267,197.258c-1.764-5.431-6.457-9.389-12.107-10.209l-158.723-23.065L269.452,20.157
 			c-2.526-5.12-7.741-8.361-13.45-8.361c-5.71,0-10.924,3.241-13.451,8.361l-70.988,143.827l-158.72,23.065
 			c-5.649,0.82-10.344,4.778-12.108,10.208c-1.765,5.431-0.293,11.392,3.796,15.377l114.848,111.954L92.271,482.671
@@ -27,7 +27,7 @@
 			C511.56,208.649,513.033,202.688,511.267,197.258z"/>
             </svg>
         </div>  
-        <p class="px-4 pb-4 text-justify text-sm">{{data.text}}</p>
+        <p class="px-4 pb-4 text-sm text-justify">{{data.text}}</p>
     </div>
        
 </template>
