@@ -22,7 +22,19 @@ const sendContactFormEmail = ({first_name, last_name, email, phone, message} = {
             to: sendTo,
             subject: "Contact form submission",
             text: `You have a new contact form submission.\n\nFirst Name: ${first_name}\nLast Name: ${last_name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
-            // html: `<p>Welcome to the app, ${name}. Let me know how you get along with the app</p>`
+            html: `Dear ${first_name},
+            <div style="line-height:90%;"><br></div>
+            <p>Thank you for writing to us. Your request was received. </p>
+            Here is what you have submitted: <br>
+            First Name: ${first_name} <br>
+            Last Name: ${last_name} <br>
+            Email: ${email} <br>
+            Phone: ${phone} <br>
+            Message: ${message} <br>
+            <p> We will get back to you shortly. Until then, you can give us a call anytime at 818-703-8480.</p>
+            <div style="line-height:90%;"><br></div>
+            Sincerely, <br>
+            Your Dynamic Massage team`
         };
 
         transporter.sendMail(emailMessage)

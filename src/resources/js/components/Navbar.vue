@@ -148,7 +148,7 @@
           href="/contact"
           :class="urlPath == '/contact' ? 'bg-gray-700' : '/contact'"
           class="block text-white font-semibold rounded px-2 py-1 mt-1 hover:bg-gray-700 sm:mt-0"
-        >Contact</a>
+        >Contact Us</a>
       </div>
     </div>
   </header>
