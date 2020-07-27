@@ -24,11 +24,11 @@ const sendContactFormEmail = ({first_name, last_name, email, phone, message} = {
             text: `You have a new contact form submission.\n\nFirst Name: ${first_name}\nLast Name: ${last_name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
             html: `<p>You have a new contact form submission!</p>
             <p>Here is what they wrote:</p>
-            First Name: ${first_name} <br>
-            Last Name: ${last_name} <br>
-            Email: ${email} <br>
-            Phone: ${phone} <br>
-            Message: ${message} <br>`
+            <b>First Name:</b> ${first_name} <br>
+            <b>Last Name:</b> ${last_name} <br>
+            <b>Email:</b> ${email} <br>
+            <b>Phone:</b> ${phone} <br>
+            <b>Message:</b> ${message} <br>`
         };
 
         transporter.sendMail(emailMessage)
