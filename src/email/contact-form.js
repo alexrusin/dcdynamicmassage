@@ -22,7 +22,13 @@ const sendContactFormEmail = ({first_name, last_name, email, phone, message} = {
             to: sendTo,
             subject: "Contact form submission",
             text: `You have a new contact form submission.\n\nFirst Name: ${first_name}\nLast Name: ${last_name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
-            // html: `<p>Welcome to the app, ${name}. Let me know how you get along with the app</p>`
+            html: `<p>You have a new contact form submission!</p>
+            Here is what they wrote: <br>
+            First Name: ${first_name} <br>
+            Last Name: ${last_name} <br>
+            Email: ${email} <br>
+            Phone: ${phone} <br>
+            Message: ${message} <br>`
         };
 
         transporter.sendMail(emailMessage)
