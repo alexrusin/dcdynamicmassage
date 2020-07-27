@@ -23,7 +23,7 @@ const sendContactFormEmail = ({first_name, last_name, email, phone, message} = {
             subject: "Contact form submission",
             text: `You have a new contact form submission.\n\nFirst Name: ${first_name}\nLast Name: ${last_name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
             html: `<p>You have a new contact form submission!</p>
-            Here is what they wrote: <br>
+            <p>Here is what they wrote:</p>
             First Name: ${first_name} <br>
             Last Name: ${last_name} <br>
             Email: ${email} <br>
