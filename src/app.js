@@ -3,6 +3,8 @@ const express = require('express')
 const hbs = require('hbs')
 const Datastore = require('nedb')
 
+const logger = require('./services/logger')
+
 const app = express()
 
 // Define paths for Express config
@@ -27,6 +29,7 @@ const apiRouter = require('./routers/api')
 app.use(apiRouter);
 
 app.get('', (req, res) => {
+    logger.info('Accessing index page');
     res.render('index')
 })
 
