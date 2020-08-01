@@ -1,9 +1,12 @@
 const nodemailer = require('nodemailer');
+const sgMail = require('@sendgrid/mail');
+const logger = require('../services/logger');
 
 let transporter;
 
 if (process.env.NODE_ENV === 'production') {
-    // throw new Error('Email transport for production is not implemented');
+   transporter = sgMail;
+   transporter.setApiKey(process.env.SENDGRID_API_KEY);
 } else {
     transporter = nodemailer.createTransport({
         host: process.env.MAILTRAP_HOST,
@@ -18,7 +21,7 @@ if (process.env.NODE_ENV === 'production') {
 const sendContactFormEmail = ({first_name, last_name, email, phone, message} = {}) => {
   process.env.SEND_TO_CONTACT_FORM.split(',').forEach((sendTo) => {
       const emailMessage = {
-            from: "info@dcdynamicmassage.com",
+            from: "alex@alexrusin.com",
             to: sendTo,
             subject: "Contact form submission",
             text: `You have a new contact form submission.\n\nFirst Name: ${first_name}\nLast Name: ${last_name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
@@ -31,7 +34,14 @@ const sendContactFormEmail = ({first_name, last_name, email, phone, message} = {
             <b>Message:</b> ${message} <br>`
         };
 
-        transporter.sendMail(emailMessage)
+        if (process.env.NODE_ENV === 'production') {
+            transporter.send(emailMessage);
+            logger.info('Form request email sent using production settings');
+        } else {
+            transporter.sendMail(emailMessage)
+            logger.info('Form request email sent to mailtrap');
+        }
+        
     })
   
 }
