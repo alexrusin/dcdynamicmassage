@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const Datastore = require('nedb')
 
 const logger = require('./services/logger')
+const errorHandler = require('./services/error-handler');
 
 const app = express()
 
@@ -29,11 +30,11 @@ const apiRouter = require('./routers/api')
 app.use(apiRouter);
 
 app.get('', (req, res) => {
-    logger.info('Accessing index page');
     res.render('index')
 })
 
 app.get('/about', (req, res) => {
+
     res.render('about')
 })
 
@@ -67,10 +68,10 @@ app.get('/coupons/:couponId', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    res.render('404', {
-        errorMessage: 'Page not found'
-    })
+    res.render('404')
 })
+
+app.use(errorHandler);
 
 if (!port) {
     port = 3030;

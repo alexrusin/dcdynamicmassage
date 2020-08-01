@@ -1,5 +1,15 @@
 const { createLogger, format, transports } = require('winston');
 
+require('winston-daily-rotate-file');
+
+var transport = new transports.DailyRotateFile({
+    filename: 'logs/application-%DATE%.log',
+    datePattern: 'YYYY-MM-DD',
+    zippedArchive: true,
+    maxSize: '20m',
+    maxFiles: '30d'
+});
+
 const logger = createLogger({
   level: 'info',
   format: format.combine(
@@ -11,16 +21,17 @@ const logger = createLogger({
     format.json()
   ),
   defaultMeta: { service: 'dcdynamicmassage' },
+
   transports: [
-    new transports.File({ filename: 'logs/dcdynamicmassage.log' })
-  ]
+      transport
+    ]
 });
 
 //
 // If we're not in production then **ALSO** log to the `console`
 // with the colorized simple format.
 //
-if (process.env.APP_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production') {
   logger.add(new transports.Console({
     format: format.combine(
       format.colorize(),

@@ -1,0 +1,16 @@
+<div class="container p-4 mx-auto">
+    <div class="min-h-screen">
+      <div class="flex items-center justify-center w-full bg-white">
+        <div class="m-8">
+            {{#if production}}
+                <div class="text-4xl font-black text-black">Sorry this page is currently unavailable</div>
+            {{else}}
+                <div class="text-4xl font-black text-black">Status: {{error.status}}</div>
+                <div class="w-16 h-1 my-3 bg-purple-light"></div>
+                <p class="mb-8 text-xl font-light leading-normal text-grey-darker">{{error.message}}</p>
+                <p class="mb-8 font-light leading-normal text-grey-darker">{{error.stack}}</p>
+            {{/if}}
+        </div>
+      </div>
+    </div>
+</div>

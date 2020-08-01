@@ -2,8 +2,8 @@ const nodemailer = require('nodemailer');
 
 let transporter;
 
-if (process.env.APP_ENV === 'production') {
-    throw new Error('Email transport for production is not implemented');
+if (process.env.NODE_ENV === 'production') {
+    // throw new Error('Email transport for production is not implemented');
 } else {
     transporter = nodemailer.createTransport({
         host: process.env.MAILTRAP_HOST,
