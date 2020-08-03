@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/main.css">
+    {{#if title}} 
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ metaDescription }}">
+    {{else}}
     <title>DC Dynamic Massage</title>
+    <meta name="description" content="Your body needs maintenance just like everything else. Massage therapy is not just a luxury, it's a key piece of your health and wellness plan">
+    {{/if}}
+
+    <meta name="keywords" content="massage therapy, sports massage, massage chair, performance recovery, infrared sauna, myofacial massage">
 </head>
 
 <body class="text-gray-800">

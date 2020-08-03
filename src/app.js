@@ -35,7 +35,10 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
 
-    res.render('about')
+    res.render('about', {
+        title: 'About | DC Dynamic Massage',
+        metaDescription: 'A highly trained group of certified massage therapists are dedicated to helping clients improve their health and achieve a balanced lifestyle'
+    })
 })
 
 app.get('/services', (req, res) => {
