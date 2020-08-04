@@ -63,6 +63,10 @@ app.get('/coupons/:couponId', (req, res) => {
         })
 })
 
+app.get('/reviews', (req, res) => {
+   res.render('reviews')
+})
+
 app.get('*', (req, res) => {
     res.render('404', {
         errorMessage: 'Page not found'
