@@ -30,14 +30,60 @@ const apiRouter = require('./routers/api')
 app.use(apiRouter);
 
 app.get('', (req, res) => {
-    res.render('index')
+    const jsonLd = `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Introducing DC Dynamic Massage",
+      "description": "Massage therapy is not just a luxury, it's a key piece of your health and wellness plan. Regularly scheduled self-care plays a big part in how healthy and vital you'll be with each passing year.",
+      "thumbnailUrl": [
+        "http://i3.ytimg.com/vi/nOxB9b3jGpQ/maxresdefault.jpg",
+        "http://i3.ytimg.com/vi/nOxB9b3jGpQ/hqdefault.jpg"
+       ],
+      "uploadDate": "2016-03-31T08:00:00+08:00",
+      "duration": "PT1M11S",
+      "contentUrl": "https://www.youtube.com/watch?v=nOxB9b3jGpQ",
+      "embedUrl": "https://www.youtube.com/embed/nOxB9b3jGpQ",
+      "interactionStatistic": {
+        "@type": "InteractionCounter",
+        "interactionType": { "@type": "http://schema.org/WatchAction" },
+        "userInteractionCount": 361
+      }
+    }
+    </script>`;
+
+    res.render('index', {
+        jsonLd
+    })
 })
 
 app.get('/about', (req, res) => {
 
+    const jsonLd = `<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "image": "https://dnh9wukuui1am.cloudfront.net/images/services/_imageLarge/DC-Dynamic-Massage-owner-2020.jpg",
+      "url": "http://dcdynamicmassage.com",
+      "name": "DC Dynamic Massage",
+      "description": "Massage therapy is not just a luxury, it's a key piece of your health and wellness plan. Regularly scheduled self-care plays a big part in how healthy and vital you'll be with each passing year.",
+      "telephone": "818.703.8480",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6400 Canoga Ave #333",
+        "addressLocality": "Woodland Hills",
+        "addressRegion": "CA",
+        "postalCode": "91367",
+        "addressCountry": "USA"
+      }
+    }
+    </script>`;
+
     res.render('about', {
         title: 'About | DC Dynamic Massage',
-        metaDescription: 'A highly trained group of certified massage therapists are dedicated to helping clients improve their health and achieve a balanced lifestyle'
+        metaDescription: 'A highly trained group of certified massage therapists are dedicated to helping clients improve their health and achieve a balanced lifestyle',
+        jsonLd
     })
 })
 
