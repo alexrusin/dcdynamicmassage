@@ -1,19 +1,19 @@
 <template>
   <header>
-    <div class="top-strip flex justify-between bg-blue-400">
-      <div class="px-6 py-4 sm:w-3/4 sm:mx-auto text-gray-300 flex items-center space-x-2">
-        <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+    <div class="flex justify-between bg-blue-400 top-strip">
+      <div class="flex items-center px-6 py-4 space-x-2 text-gray-300 sm:w-3/4 sm:mx-auto">
+        <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
           <path
             d="M17.256 12.253c-.096-.667-.611-1.187-1.274-1.342-2.577-.604-3.223-2.088-3.332-3.734C12.193 7.092 11.38 7 10 7s-2.193.092-2.65.177c-.109 1.646-.755 3.13-3.332 3.734-.663.156-1.178.675-1.274 1.342l-.497 3.442C2.072 16.907 2.962 18 4.2 18h11.6c1.237 0 2.128-1.093 1.953-2.305l-.497-3.442zM10 15.492c-1.395 0-2.526-1.12-2.526-2.5s1.131-2.5 2.526-2.5 2.526 1.12 2.526 2.5-1.132 2.5-2.526 2.5zM19.95 6c-.024-1.5-3.842-3.999-9.95-4C3.891 2.001.073 4.5.05 6s.021 3.452 2.535 3.127c2.941-.381 2.76-1.408 2.76-2.876C5.345 5.227 7.737 4.98 10 4.98s4.654.247 4.655 1.271c0 1.468-.181 2.495 2.76 2.876C19.928 9.452 19.973 7.5 19.95 6z"
           />
         </svg>
         <div class="font-semibold">818-257-9496</div>
       </div>
-      <div class="flex sm:hidden items-center space-x-4 px-6">
+      <div class="flex items-center px-6 space-x-4 sm:hidden">
         <div>
           <a href="https://www.facebook.com/dcdynamicmassage" target="_blank">
             <svg
-              class="h-4 w-4 text-gray-300 hover:text-gray-100 fill-current"
+              class="w-4 h-4 text-gray-300 fill-current hover:text-gray-100"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -26,7 +26,7 @@
         <div>
           <a href="https://twitter.com/ddynamicmassage" target="_blank">
             <svg
-              class="h-4 w-4 text-gray-300 hover:text-gray-100 fill-current"
+              class="w-4 h-4 text-gray-300 fill-current hover:text-gray-100"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -39,7 +39,7 @@
         <div>
           <a href="https://www.yelp.com/biz/dc-dynamic-massage-woodland-hills" target="_blank">
             <svg
-              class="h-4 w-4 text-gray-300 hover:text-gray-100 fill-current"
+              class="w-4 h-4 text-gray-300 fill-current hover:text-gray-100"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -52,21 +52,21 @@
       </div>
     </div>
     <div
-      class="logo-strip px-6 py-8 sm:w-3/4 sm:mx-auto flex justify-around sm:justify-between items-baseline"
+      class="flex items-baseline justify-around px-6 py-8 logo-strip sm:w-3/4 sm:mx-auto sm:justify-between"
     >
       <div class="flex items-center">
-        <div class="-ml-1 mr-1">
+        <div class="mr-1 -ml-1">
           <img class="h-8 sm:h-10" src="/img/logo.png" alt="DC Dynamic Massage" />
         </div>
         <div>
-          <h1 class="logo-text font-bold text-2xl sm:text-3xl">DC Dynamic Massage</h1>
+          <div class="text-2xl font-bold logo-text sm:text-3xl">DC Dynamic Massage</div>
         </div>
       </div>
-      <div class="hidden sm:flex items-center space-x-2 md:space-x-6">
+      <div class="items-center hidden space-x-2 sm:flex md:space-x-6">
         <div>
           <a href="https://www.facebook.com/dcdynamicmassage" target="_blank">
             <svg
-              class="h-6 w-6 text-blue-600 hover:text-blue-400 fill-current"
+              class="w-6 h-6 text-blue-600 fill-current hover:text-blue-400"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -79,7 +79,7 @@
         <div>
           <a href="https://twitter.com/ddynamicmassage" target="_blank">
             <svg
-              class="h-6 w-6 text-blue-400 hover:text-blue-200 fill-current"
+              class="w-6 h-6 text-blue-400 fill-current hover:text-blue-200"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -92,7 +92,7 @@
         <div>
           <a href="https://www.yelp.com/biz/dc-dynamic-massage-woodland-hills" target="_blank">
             <svg
-              class="h-6 w-6 text-red-600 hover:text-red-500 fill-current"
+              class="w-6 h-6 text-red-600 fill-current hover:text-red-500"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
             >
@@ -104,15 +104,15 @@
         </div>
       </div>
     </div>
-    <div class="menu-strip bg-blue-400 pb-4 md:pb-0">
-      <div class="sm:hidden py-3 flex justify-end px-6">
+    <div class="pb-4 bg-blue-400 menu-strip md:pb-0">
+      <div class="flex justify-end px-6 py-3 sm:hidden">
         <button
           @click="isOpen = !isOpen"
           type="button"
           class="text-gray-300 hover:text-white focus:text-white focus:outline-none"
         >
           <svg
-            class="h-8 w-8 fill-current"
+            class="w-8 h-8 fill-current"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
             width="24"
@@ -127,27 +127,27 @@
       </div>
       <div
         :class="isOpen ? '' : 'hidden'"
-        class="sm:flex sm:items-center-mt-4 px-6 py-4 -my-6 sm:my-0 sm:mt-0 md:text-xl sm:w-1/2 sm:mx-auto sm:justify-around"
+        class="px-6 py-4 -my-6 sm:flex sm:items-center-mt-4 sm:my-0 sm:mt-0 md:text-xl sm:w-1/2 sm:mx-auto sm:justify-around"
       >
         <a
           href="/"
           :class="urlPath == '' ? 'bg-gray-700' : ''"
-          class="block text-white font-semibold rounded px-2 py-1 hover:bg-gray-700"
+          class="block px-2 py-1 font-semibold text-white rounded hover:bg-gray-700"
         >Home</a>
         <a
           href="/about"
           :class="urlPath == '/about' ? 'bg-gray-700' : ''"
-          class="block text-white font-semibold rounded px-2 py-1 mt-1 hover:bg-gray-700 sm:mt-0"
+          class="block px-2 py-1 mt-1 font-semibold text-white rounded hover:bg-gray-700 sm:mt-0"
         >About</a>
         <a
           href="/services"
           :class="urlPath == '/services' ? 'bg-gray-700' : '/services'"
-          class="block text-white font-semibold rounded px-2 py-1 mt-1 hover:bg-gray-700 sm:mt-0"
+          class="block px-2 py-1 mt-1 font-semibold text-white rounded hover:bg-gray-700 sm:mt-0"
         >Services</a>
         <a
           href="/contact"
           :class="urlPath == '/contact' ? 'bg-gray-700' : '/contact'"
-          class="block text-white font-semibold rounded px-2 py-1 mt-1 hover:bg-gray-700 sm:mt-0"
+          class="block px-2 py-1 mt-1 font-semibold text-white rounded hover:bg-gray-700 sm:mt-0"
         >Contact Us</a>
       </div>
     </div>
