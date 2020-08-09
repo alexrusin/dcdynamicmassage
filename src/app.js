@@ -2,6 +2,7 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 const Datastore = require('nedb')
+const favicon = require('serve-favicon')
 
 const logger = require('./services/logger')
 const errorHandler = require('./services/error-handler');
@@ -10,6 +11,7 @@ const app = express()
 
 // Define paths for Express config
 const publicPath = path.join(__dirname, '../public')
+const faviconPath = path.join(__dirname, '../public', 'favicon.ico')
 const viewsPath = path.join(__dirname, 'templates/views')
 const partialsPath = path.join(__dirname, 'templates/partials')
 const layoutsPath = path.join(__dirname, 'templates/layouts')
@@ -24,6 +26,8 @@ hbs.registerPartials(partialsPath)
 
 // Setup static directory to serve
 app.use(express.static(publicPath))
+app.use(favicon(faviconPath));
+
 app.use(express.json());
 
 const apiRouter = require('./routers/api')
