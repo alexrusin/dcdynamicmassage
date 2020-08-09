@@ -4,6 +4,7 @@ const honeypot = require('../middleware/honeypot')
 const contactFormValidator = require('../middleware/contact-form-validator')
 const { sendContactFormEmail } = require('../email/contact-form')
 
+const logger = require('../services/logger')
 const Datastore = require('nedb');
 
 
@@ -31,6 +32,7 @@ router.get('/api/coupons', (req, res) => {
         coupons.find({}, (err, docs) => {
 
             if (err) {
+                logger.error(err)
                 return res.send({
                     coupons: []
                 })
