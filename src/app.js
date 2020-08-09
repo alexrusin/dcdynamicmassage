@@ -82,17 +82,21 @@ app.get('/about', (req, res) => {
 
     res.render('about', {
         title: 'About | DC Dynamic Massage',
-        metaDescription: 'A highly trained group of certified massage therapists are dedicated to helping clients improve their health and achieve a balanced lifestyle',
+        metaDescription: 'Our intention as massage therapists is to educate our clients about the importance of massage. We show you the importance of sports massage and range of motion.  This will help you expand knowledge of your body and improve performance and recovery process',
         jsonLd
     })
 })
 
 app.get('/services', (req, res) => {
-    res.render('services')
+    res.render('services', {
+        title: 'Services | DC Dynamic Massage'
+    })
 })
 
 app.get('/contact', (req, res) => {
-    res.render('contact')
+    res.render('contact', {
+        title: 'Contact Us | DC Dynamic Massage'
+    })
 })
 
 app.get('/contact-form-submitted', (req, res) => {
