@@ -27,6 +27,7 @@ hbs.registerPartials(partialsPath)
 // Setup static directory to serve
 app.use(express.static(publicPath))
 app.use(favicon(faviconPath));
+
 app.use(express.json());
 
 const apiRouter = require('./routers/api')
