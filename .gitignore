@@ -3,3 +3,5 @@ logs
 .env
 public/css/main.css
 public/js/app.js
+mix-manifest.json
+app.js.LICENSE.txt
